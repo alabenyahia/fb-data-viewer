@@ -1,0 +1,55 @@
+.msg {
+    margin: 12px;
+    max-width: 50%;
+    align-self: flex-start;
+}
+
+.msg.from-me {
+    align-self: flex-end;
+}
+
+.msg .msg__date {
+    margin-top: 0;
+}
+
+.msg img, .msg video {
+    width: 70%;
+    object-fit: contain;
+}
+
+.msg.from-me img, .msg.from-me video {
+    margin-left: auto;
+    display: block;
+}
+
+.msg audio {
+    height: 60px;
+}
+
+.msg .msg__msg {
+    padding: 16px 20px;
+    background-color: #E4E6EB;
+    color: black;
+    border-radius: 99px;
+    word-break: break-all;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.msg.from-me .msg__msg {
+    background-color: rgb(242, 92, 84);
+    color: white;
+
+}
+
+.msg .msg__from {
+    margin-bottom: 0;
+}
+
+.msg .msg__unsent {
+    padding: 12px;
+    background-color: #bcbcbc;
+    color: black;
+    text-decoration: line-through;
+    border-radius: 99px;
+}

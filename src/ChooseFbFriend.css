@@ -1,0 +1,48 @@
+.ChooseFbFriend {
+    width: 70%;
+    margin: 64px auto;
+    text-align: center;
+}
+
+.ChooseFbFriend input[type="text"] {
+    padding: 10px 0;
+    margin-left: 12px;
+    width: 40%;
+}
+
+a {
+    text-decoration: none;
+    color: goldenrod;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+
+    border-bottom: 1px solid lightgrey;
+    padding: 12px 0;
+    font-size: 1.1rem;
+}
+
+.ChooseFbFriend input[type="submit"] {
+    padding: 12px 32px;
+    cursor: pointer;
+    margin: 0 12px;
+    background-color: goldenrod;
+    color: white;
+    border: 0;
+
+}
+
+.ChooseFbFriend button{
+    border: none;
+    background-color: hotpink;
+    color: white;
+    padding: 16px 32px;
+    cursor: pointer;
+    margin: 16px 0;
+    border-radius: 99px;
+}
+

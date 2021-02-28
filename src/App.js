@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Routing from "./Routing";
+import {GlobalContext} from "./context/GlobalState";
+import {useEffect, useContext} from "react";
+import {ALL_CONVERS_PATH} from "./data";
 
 function App() {
+    const {setAllConver} = useContext(GlobalContext);
+
+    useEffect(()=> {
+        fetch(ALL_CONVERS_PATH)
+            .then(res => res.json())
+            .then(data => setAllConver(data));
+    }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Routing/>
     </div>
   );
 }

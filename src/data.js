@@ -1,0 +1,1 @@
+export const ALL_CONVERS_PATH = process.env.PUBLIC_URL + '/data/facebook-alabenyahia18/messages/inbox/conversations.json';
